@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 h3 {
@@ -84,13 +85,14 @@ h3 {
     flex: 1 1 0;
     border-radius: 5px;
     color: white;
-    font-size: 1.5vw;
+    font-size: 14px;
     font-weight: lighter;
     position: relative;
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
     display: flex;
     margin: 10px;
+    text-align: left;
 }
 
 .geralt {
