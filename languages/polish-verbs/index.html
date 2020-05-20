@@ -8,6 +8,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@300&family=PT+Sans&family=Tajawal&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,96 +30,231 @@
 
         <div class="middle section">
 
+            <!-- Bestiary: notes -->
             <div class="bestiary">
-                <img class="geralt" src="images/geralt.png">
+                <div class="geralt">
+                    <img class="geralt-img" src="images/geralt.png">
+                </div>
                 <p>Hello tHello this is iI talHello this is a message where I talhis is a message where I talk and
                     talk and talk</p>
-
             </div>
 
+            <!-- Verb -->
             <div class="verb">
                 <p class="verb-heading">Verbasds</p>
             </div>
 
-                <div class="examples">
-                    <div class="eg-polish">
-                        <h3 class="eg-title">zdanie po polsku</h3>
-                        <p>Hello asd jsad alsd jalsmd alsm dsam djw ds</p>
-                    </div>
-                    <div class="eg-english">
-                        <h3 class="eg-title">denie po angielsku</h3>
-                        <p>Hello theraskd sand laskdn asld lsakd awnd sne</p>
-                    </div>
-            </div>
+            <!-- Example Slideshow container -->
+            <div class="slideshow-container examples">
 
+                <div class="mySlides fade eg-polish">
+                    <h3 class="eg-title">zdanie po polsku</h3>
+                    <p>Hello asd jsad alsd jalsmd alsm dsam djw ds</p>
+                </div>
+
+                <div class="mySlides fade eg-english">
+                    <h3 class="eg-title">denie po angielsku</h3>
+                    <p>Hello theraskd sand laskdn asld lsakd awnd sne</p>
+                </div>
+
+
+                <!-- Slideshow dots -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
         </div>
 
         <!-- BOTTOM AREA
                 :::: Includes tables of conjugation -->
 
         <div class="bottom section">
-            <table>
-                <tbody>
-                    <tr>
-                        <td colspan="2"><span class="tabletitle">Bloblo</span></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <table>
-                <tbody>
-                    <tr>
-                        <td colspan="2"><span class="tabletitle">Bloblo</span></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- TABLE 1: blabla -->
+            <div class="item">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span class="tabletitle">Bloblo</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <table>
-                <tbody>
-                    <tr>
-                        <td colspan="2"><span class="tabletitle">Bloblo</span></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                        <td><span class="mini-touch">Bloblo</span></td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- TABLE 1: blabla -->
+            <div class="item">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span class="tabletitle">Bloblo</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- TABLE 3 & 4: blabla -->
+            <div class="item double-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span class="tabletitle">Bloblo</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span class="tabletitle">Bloblo</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- TABLE 5 & 6: blabla -->
+            <div class="double-table item">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span class="tabletitle">Bloblo</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span class="tabletitle">Bloblo</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+
+            <!-- TABLE 7 -->
+            <div class="item">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span class="tabletitle">Bloblo</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Table 8 -->
+            <div class="item">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><span class="tabletitle">Bloblo</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                            <td><span class="mini-touch">Bloblo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <footer class="footer">
@@ -130,6 +266,41 @@
 
 
     </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>
