@@ -10,16 +10,27 @@ h3 {
     margin: 0;
 }
 
+p {
+    margin-top: 5px;
+}
+
 
 
 .main-card {
-    border-radius: 10px;
-    margin: 10%;
+    border-radius: 8px;
+    margin: 5% 10%;
     background-image: url(images/forest-background.jpg);
     background-size: cover;
     font-family: 'Raleway', sans-serif;
     box-shadow: 0 0 15px rgba(0, 0, 0, .8);
     position: relative;
+}
+
+@media all and (max-width: 600px) {
+    .main-card {
+        margin: 0;
+        border-radius: 0;
+    }
 }
 
 
@@ -140,8 +151,7 @@ h3 {
         flex-wrap: wrap;
     }
     .bestiary {
-        order: 1;
-        flex: 1 1 100%;
+        flex: 1 1 1;
         font-size: 14px;
         margin-top: 10px;
     }   
@@ -152,7 +162,7 @@ h3 {
     }
 
     .examples {
-        flex: 1 1 20%;
+        flex: 1 1 100%;
         font-size: 14px;
     }
 }
