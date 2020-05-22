@@ -1,3 +1,5 @@
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -40,9 +42,14 @@ p {
 
 .top {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center; /*  HERE */
     align-items: center;
     text-align: center;
+}
+
+
+.wolf {
+    justify-self: center;
 }
 
 .wolf-img {
@@ -62,6 +69,7 @@ p {
 @media all and (max-width: 500px) {
     .top {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .wolf {
@@ -75,7 +83,15 @@ p {
 
     .touch {
         padding: 15px 30px;
-        font-size: 3vw;
+        font-size: 4vw;
+        flex-basis: 100px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .touch {
+        font-size: 18px;
+        padding: 15px 30px;
     }
 }
 
@@ -89,20 +105,25 @@ p {
     text-align: center;
     border-top: solid 1px rgba(241, 241, 242, 0.5);
     background: rgba(52, 36, 50, 0.8);
+    padding-top: 20px;
 }
 
 .bestiary {
     flex: 1 1 0;
     border-radius: 5px;
-    color: white;
+    color: #ccc;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 400;
     position: relative;
     background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
+    padding: 10px 15px;
     display: flex;
     margin: 10px;
     text-align: left;
+}
+
+.bestiary > p {
+    align-self: center;
 }
 
 .geralt {
@@ -185,6 +206,10 @@ p {
         flex: 1 1 1;
         font-size: 14px;
     }
+
+    .verb-heading{
+    font-size: 5vw;
+    }
 }
 
 
@@ -220,9 +245,16 @@ p {
 .bottom {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    /* background: rgba(52, 36, 50, 0.6); */
 }
 
+.table-container {
+    border-radius: 4px;
+    background:rgba(52, 36, 50, .6); 
+    padding: 0 20px;
+}
 table {
     text-align: center;
     margin: auto;
@@ -240,8 +272,12 @@ table {
 }
 
 .tabletitle {
+    border-radius: 4px;
     color: rgb(179, 54, 79);
-
+    font-size: 1.5vw;
+    font-family: 'Avenir';
+    background: rgba(52, 36, 50, 0.6);
+    padding: 0 10px;
 }
 
 .mini-touch {
@@ -253,20 +289,46 @@ table {
     color: white;
     font-family: 'Avenir';
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 1.3vw; /*18px*/
 }
 
 @media (max-width: 800px) {
+    .bottom {
+        justify-content: center;
+    }
     .mini-touch {
         font-size: 14px;
     }
+
+    .tabletitle {
+        font-size: 16px;
+    }
+
+    .table-container {
+        flex: 1 1 50%;
+        background: none;
+        padding: 0;
+    }
+
+    .table-container:first-of-type {
+        flex: 1 1 100%;
+    }
+
 }
+
+@media (max-width: 500px) {
+    .bottom {
+            flex-direction: column;
+        }
+    }
+
 
 /* Footer */
 
 .footer img {
     display: block;
     min-width: 170px;
+    max-width: 300px;
     width: 30%;
     margin: auto;
 }
@@ -284,7 +346,7 @@ table {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot, .dot-table1, .dot-table2, .dot-table3 {
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -295,7 +357,7 @@ table {
     transition: background-color 0.6s ease;
   }
   
-  .active, .dot:hover {
+  .active, .dot:hover, .dot-table1:hover, .dot-table2:hover, .dot-table3:hover {
     background-color: #bbb;
   }
 
@@ -316,4 +378,8 @@ table {
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+  .table1, .table2, .table3 {
+      display: none;
   }
