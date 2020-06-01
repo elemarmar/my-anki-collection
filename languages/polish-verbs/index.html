@@ -8,21 +8,30 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@300&family=PT+Sans&family=Tajawal&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Inconsolata:wght@300&family=PT+Sans&family=Tajawal&display=swap"
+        rel="stylesheet">
 
+    <!-- My Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="main-card">
 
+    <div class="main-card">
         <!-- TOP AREA 
-             :::Includes the Imperfective and perfective forms of the verb-->
+            ::::Includes the Imperfective and perfective forms of the verb -->
 
         <div class="top section">
-            <div class="touch">Imperfective</div>
+            <div class="touch">
+                <span id="nied" onclick="showTouch(1)">niedokonany</span>
+                <span id="imperfective">robić</span>
+            </div>
             <div class="wolf"><img class="wolf-img" src="images/whitewolf.png"></div>
-            <div class="touch">perfective</div>
+            <div class="touch">
+                <span id="dok" onclick="showTouch(2)">dokonany</span>
+                <span id="perfective">zrobić</span>
+            </div>
         </div>
 
         <!-- MIDDLE AREA
@@ -39,24 +48,26 @@
                     talk and talk</p>
             </div>
 
-            <!-- Verb -->
+            <!-- Verb in infinitive -->
             <div class="verb">
                 <p class="verb-heading">Verbasds</p>
             </div>
 
-            <!-- Example Slideshow container -->
+            <!-- Example box -->
+            <!-- Slideshow container -->
             <div class="slideshow-container examples">
 
+                <!-- Polish example -->
                 <div class="mySlides fade eg-polish">
                     <h3 class="eg-title">zdanie po polsku</h3>
                     <p>Hello asd jsad alsd jalsmd alsm dsam djw ds</p>
                 </div>
 
+                <!-- English example -->
                 <div class="mySlides fade eg-english">
-                    <h3 class="eg-title">denie po angielsku</h3>
+                    <h3 class="eg-title">zdanie po angielsku</h3>
                     <p>Hello theraskd sand laskdn asld lsakd awnd sne</p>
                 </div>
-
 
                 <!-- Slideshow dots -->
                 <div style="text-align:center">
@@ -67,56 +78,66 @@
         </div>
 
         <!-- BOTTOM AREA
-                :::: Includes tables of conjugation -->
-
+             :::: Includes tables of conjugation -->
         <div class="bottom section slideshow-tables-container">
 
             <!-- TABLES 1: Present and simple future perfective -->
             <div class="table-container">
+
+                <!-- Present -->
                 <div class="table1 fade">
                     <table class="table-item">
                         <tbody>
                             <tr>
-                                <td colspan="2"><span class="tabletitle">Bloblo1</span></td>
+                                <td colspan="2"><span class="tabletitle">czas teraźniejszy</span></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td colspan="2"><img class="sword" src="images/sword.png"></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(1)">robię</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(2)">robisz</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(3)">robi</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(4)">robimy</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="mini-touch" onclick="showMiniTouch(5)">robicie</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(6)">robią</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Simple future perfective -->
                 <div class="table1 fade">
                     <table class="table-item">
                         <tbody>
                             <tr>
-                                <td colspan="2"><span class="tabletitle">Bloblo2</span></td>
-                                <td></td>
+                                <td colspan="2"><span class="tabletitle">czas przyszły prosty</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td colspan="2"><img class="sword" src="images/sword.png"></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(7)">zrobię</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(8)">zrobisz</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(9)">zrobi</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(10)">zrobimy</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="mini-touch" onclick="showMiniTouch(11)">zrobicie</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(12)">zrobią</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Slideshow dots -->
                 <div style="text-align:center">
                     <span class="dot-table1" onclick="currentTable1Slide(1)"></span>
                     <span class="dot-table1" onclick="currentTable1Slide(2)"></span>
@@ -126,72 +147,89 @@
 
             <!-- TABLE 2: Past imperfect -->
             <div class="table-container">
+
+                <!-- Masculine -->
                 <div class="table2 fade">
                     <table class="table-item">
                         <tbody>
                             <tr>
-                                <td colspan="2"><span class="tabletitle">Bloblo5</span></td>
+                                <td colspan="2"><span class="tabletitle">czas przeszły (ndk.)</span></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td colspan="2" class="gender masc">męski</td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(13)">zrobiłem</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(14)">zrobiłeś</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(15)">zrobił</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(16)">zrobiliśmy</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="mini-touch" onclick="showMiniTouch(17)">zrobiliście</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(18)">zrobili</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Femenine -->
                 <div class="table2 fade">
                     <table class="table-item">
                         <tbody>
                             <tr>
-                                <td colspan="2"><span class="tabletitle">Bloblo6</span></td>
+                                <td colspan="2"><span class="tabletitle">czas przeszły (ndk.)</span></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td colspan="2" class="gender fem">żeński</td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(19)">zrobiłam</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(20)">Bloblo</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(21)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(22)"">Bloblo</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class=" mini-touch" onclick="showMiniTouch(23)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(24)">Bloblo</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Neuter -->
                 <div class="table2 fade">
                     <table class="table-item">
                         <tbody>
                             <tr>
-                                <td colspan="2"><span class="tabletitle">Bloblo7</span></td>
+                                <td colspan="2"><span class="tabletitle">czas przeszły (ndk.)</span></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td colspan="2" class="gender neut">nijaki</td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(25)">Ø</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(26)">Ø</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(27)">Ø</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(28)">Ø</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="mini-touch" onclick="showMiniTouch(29)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(30)">Bloblo</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Slideshow dots -->
                 <div style="text-align:center">
                     <span class="dot-table2" onclick="currentTable2Slide(1)"></span>
                     <span class="dot-table2" onclick="currentTable2Slide(2)"></span>
@@ -199,96 +237,115 @@
                 </div>
             </div>
 
-            <!-- TABLE 3: Past imperfect -->
+            <!-- TABLE 3: Past perfect -->
             <div class="table-container">
+
+                <!-- Masculine -->
                 <div class="table3 fade">
                     <table class="table-item">
                         <tbody>
                             <tr>
-                                <td colspan="2"><span class="tabletitle">Bloblo5</span></td>
+                                <td colspan="2"><span class="tabletitle">czas przeszły (dk.)</span></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td colspan="2" class="gender masc">męski</td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(31)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(32)">Bloblo</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(33)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(34)">Bloblo</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="mini-touch" onclick="showMiniTouch(35)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(36)">Bloblo</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Feminine -->
                 <div class="table3 fade">
                     <table class="table-item">
                         <tbody>
                             <tr>
-                                <td colspan="2"><span class="tabletitle">Bloblo6</span></td>
+                                <td colspan="2"><span class="tabletitle">czas przeszły (dk.)</span></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td colspan="2" class="gender fem">żeński</td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(37)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(38)">Bloblo</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(39)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(40)">Bloblo</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="mini-touch" onclick="showMiniTouch(41)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(42)">Bloblo</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Neutrum -->
                 <div class="table3 fade">
                     <table class="table-item">
                         <tbody>
                             <tr>
-                                <td colspan="2"><span class="tabletitle">Bloblo7</span></td>
+                                <td colspan="2"><span class="tabletitle">czas przeszły (dk.)</span></td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td colspan="2" class="gender neut">nijaki</td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(43)">Ø</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(44)">Ø</span></td>
                             </tr>
                             <tr>
-                                <td><span class="mini-touch">Bloblo</span></td>
-                                <td><span class="mini-touch">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(45)">Ø</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(46)">Ø</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="mini-touch" onclick="showMiniTouch(47)">Bloblo</span></td>
+                                <td><span class="mini-touch" onclick="showMiniTouch(48)">Bloblo</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <!-- Slideshow dots -->
                 <div style="text-align:center">
                     <span class="dot-table3" onclick="currentTable3Slide(1)"></span>
                     <span class="dot-table3" onclick="currentTable3Slide(2)"></span>
                     <span class="dot-table3" onclick="currentTable3Slide(3)"></span>
                 </div>
             </div>
-           
-
         </div>
 
+        <div id="present" style="display: none">como, comes, come, comemos, coméis, comen</div>
+        <div id="future" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="pastperf-m" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="pastperf-f" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="pastperf-n" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="pastimperf-m" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="pastimperf-f" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="pastimperf-n" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+
+        <!-- Footer with witcher symbols -->
         <footer class="footer">
             <img src="images/flag.png">
         </footer>
     </div>
 
-    <!-- Footer -->
-
-
-    </div>
-
     <script>
-
         // Slideshow Example
         var slideIndex = 1;
         showSlides(slideIndex);
@@ -359,7 +416,7 @@
         }
 
         // Slideshow Table 3
-                var table3Index = 1;
+        var table3Index = 1;
         showTable3(table3Index);
 
         function currentTable3Slide(n) {
@@ -382,7 +439,73 @@
         }
 
 
-        // Slides Tables 4
+        //  TOUCH & MINITOUCH
+
+        // Automatically hide Touch and Minitouch
+        hideAllTouch();
+
+        function hideAllTouch() {
+            var imperfective = document.getElementById("imperfective");
+            var perfective = document.getElementById("perfective");
+            var miniTouch = document.getElementsByClassName("mini-touch");
+            imperfective.style.display = "none";
+            perfective.style.display = "none";
+
+
+            // Hides mini-touch
+            for (var i = 0; i < miniTouch.length; i++) {
+                miniTouch[i].classList.add("hidden");
+            }
+        }
+
+        // Show Touch
+        function showTouch(n) {
+            var imperfective = document.getElementById("imperfective");
+            var perfective = document.getElementById("perfective");
+            var nied = document.getElementById("nied");
+            var dok = document.getElementById("dok");
+            var touch = document.getElementsByClassName("touch");
+
+
+            if (n < 2) {
+                imperfective.style.display = "block";
+                nied.style.display = "none";
+            } else {
+                perfective.style.display = "block";
+                dok.style.display = "none";
+            }
+        }
+
+        // Show Mini-touch
+        var miniTouch = document.getElementsByClassName("mini-touch");
+        function showMiniTouch(n) {
+            miniTouch[n - 1].classList.remove("hidden");
+        }
+
+        // Convert a string to array to table
+        function string_to_array(name, table) {
+            var present = document.getElementById(name).innerText;
+            console.log(name);
+
+            present = present.trim().split(", ");
+            var rowLength = 3;
+            var i = ((table-1)*6) // hardcoded
+
+            for (let row = 0; row < rowLength; row++) {
+                    miniTouch[i].innerText = present[row];
+                    miniTouch[i+1].innerText = present[row + 3];
+                    i = i + 2;   
+            }            
+        }
+        string_to_array("present", 1);
+        string_to_array("future", 2);
+        string_to_array("pastperf-m", 3);
+        string_to_array("pastperf-f", 4);
+        string_to_array("pastperf-n", 5);
+        string_to_array("pastimperf-m", 6);
+        string_to_array("pastimperf-f", 7);
+        string_to_array("pastimperf-n", 8);
+
     </script>
 </body>
 
