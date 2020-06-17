@@ -330,14 +330,14 @@
             </div>
         </div>
 
-        <div id="present" style="display: none">como, comes, come, comemos</div>
-        <div id="future" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
-        <div id="pastperf-m" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
-        <div id="pastperf-f" style="display: none">comeré, comerás</div>
-        <div id="pastperf-n" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
-        <div id="pastimperf-m" style="display: none">comeré, -, -, comeremos, comeréis, comerán</div>
-        <div id="pastimperf-f" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
-        <div id="pastimperf-n" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="present" style="display: none">-, -, -, -, -, -</div>
+        <div id="future" style="display: none">-, -, -, -, -, -</div>
+        <div id="pastperf-m" style="display: none">-, -, -, -, -, -</div>
+        <div id="pastperf-f" style="display: none">-, -, -, -, -, -</div>
+        <div id="pastperf-n" style="display: none">-, -, -, -, -, -</div>
+        <div id="pastimperf-m" style="display: none">-, -, -, -, -, -</div>
+        <div id="pastimperf-f" style="display: none">-, -, -, -, -, -</div>
+        <div id="pastimperf-n" style="display: none">-, -, -, -, -, -</div>
 
         <!-- Footer with witcher symbols -->
         <footer class="footer">
@@ -554,10 +554,12 @@
         // Change dashes to "Ø" & Always show the empty cells showing "Ø"
         showZeroCells();
 
+ 
         function showZeroCells() {
             var miniTouch = document.getElementsByClassName("mini-touch");
+            console.log(miniTouch.length);
             for (var i = 0; i < miniTouch.length; i++) {
-                if (miniTouch[i].innerText == "-") {
+                if (miniTouch[i].innerText = "-") {
                     miniTouch[i].innerText = "Ø";
                 }
 
