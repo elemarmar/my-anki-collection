@@ -30,7 +30,7 @@
             <div class="wolf"><img class="wolf-img" src="images/whitewolf.png"></div>
             <div class="touch">
                 <span id="dok" onclick="showTouch(2)">dokonany</span>
-                <span id="perfective">zrobić</span>
+                <span id="perfective"></span>
             </div>
         </div>
 
@@ -50,7 +50,7 @@
 
             <!-- Verb in infinitive -->
             <div class="verb">
-                <p class="verb-heading">Verbasds</p>
+                <p class="verb-heading">Verb</p>
             </div>
 
             <!-- Example box -->
@@ -330,12 +330,12 @@
             </div>
         </div>
 
-        <div id="present" style="display: none">como, comes, come, comemos, coméis, comen</div>
+        <div id="present" style="display: none">como, comes, come, comemos</div>
         <div id="future" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
         <div id="pastperf-m" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
-        <div id="pastperf-f" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="pastperf-f" style="display: none">comeré, comerás</div>
         <div id="pastperf-n" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
-        <div id="pastimperf-m" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
+        <div id="pastimperf-m" style="display: none">comeré, -, -, comeremos, comeréis, comerán</div>
         <div id="pastimperf-f" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
         <div id="pastimperf-n" style="display: none">comeré, comerás, comerá, comeremos, comeréis, comerán</div>
 
@@ -345,6 +345,27 @@
         </footer>
     </div>
 
+    <!-- Control section -->
+    <div class="controls">
+            <label for="present-tense">Present tense:
+                <input id="present-tense" type="text">
+            </label>
+
+            <label for="past-tense-imp">Past tense Imperfective:
+                 <input id="past-tense-imp" type="text">
+            </label>
+
+            <label for="past-tense-per">Past tense imperfective:
+                 <input id="past-tense-per" type="text">
+             </label>
+
+
+            <input type="button" value="Update!" onClick="presenTense()">
+    </div>
+
+
+
+    <!-- SCRIPTS -->
     <script>
         // Slideshow Example
         var slideIndex = 1;
@@ -476,28 +497,31 @@
             }
         }
 
+
+
         // Show Mini-touch
         var miniTouch = document.getElementsByClassName("mini-touch");
         function showMiniTouch(n) {
             miniTouch[n - 1].classList.remove("hidden");
         }
+   
+        // Take input and change DOM element
+        function presenTense() {
+            var input = document.getElementById('present-tense');
+            console.log("input is " + input.value)
+
+            var present = document.getElementById('present');
+            console.log("present is " + present)
+
+            present.innerHTML = input.value;
+            console.log("present is " + present.innerHTML)
+            string_to_array("present", 1);
+            showZeroCells();
+        }
+
 
         // Convert a string to array to table
-        function string_to_array(name, table) {
-            var present = document.getElementById(name).innerText;
-            console.log(name);
 
-            present = present.trim().split(", ");
-            var rowLength = 3;
-            var i = ((table-1)*6) // hardcoded
-
-            for (let row = 0; row < rowLength; row++) {
-                    miniTouch[i].innerText = present[row];
-                    miniTouch[i+1].innerText = present[row + 3];
-                    i = i + 2;   
-            }            
-        }
-        string_to_array("present", 1);
         string_to_array("future", 2);
         string_to_array("pastperf-m", 3);
         string_to_array("pastperf-f", 4);
@@ -505,6 +529,63 @@
         string_to_array("pastimperf-m", 6);
         string_to_array("pastimperf-f", 7);
         string_to_array("pastimperf-n", 8);
+
+        function string_to_array(name, table) {
+            var tense = document.getElementById(name).innerText;
+
+            tense = tense.trim().split(",");
+            while (tense.length < 6) {
+                tense.push("Ø");
+            }
+
+            var rowLength = 3;
+            var i = ((table-1)*6) // hardcoded
+
+            // Organize verbs in cells
+            for (let row = 0; row < rowLength; row++) {
+                    miniTouch[i].innerText = tense[row];
+                    miniTouch[i+1].innerText = tense[row + 3];
+                    i = i + 2;   
+            }         
+        }
+
+
+
+        // Change dashes to "Ø" & Always show the empty cells showing "Ø"
+        showZeroCells();
+
+        function showZeroCells() {
+            var miniTouch = document.getElementsByClassName("mini-touch");
+            for (var i = 0; i < miniTouch.length; i++) {
+                if (miniTouch[i].innerText == "-") {
+                    miniTouch[i].innerText = "Ø";
+                }
+
+                if (miniTouch[i].innerText == "Ø") {
+                    miniTouch[i].classList.remove("hidden");
+                }   
+            }
+        }
+
+        // If touch element field is empty, show Ø
+        showZeroTouch();
+        function showZeroTouch() {
+            var imperfective = document.getElementById("imperfective");
+            var perfective = document.getElementById("perfective");
+            var dok = document.getElementById("dok");
+            var nied = document.getElementById("nied");
+            
+            if (perfective.innerHTML === "") {
+                dok.innerHTML = "Ø"; 
+                dok.removeAttribute("onclick");
+            }
+
+            if (imperfective.innerHTML === "") {
+                nied.innerHTML = "Ø";
+                nied.removeAttribute("onclick");
+            }
+        }
+
 
     </script>
 </body>

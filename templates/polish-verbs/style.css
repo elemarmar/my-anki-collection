@@ -25,7 +25,7 @@ p {
   position: relative;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1058px) {
   .main-card {
     margin: 0;
     border-radius: 0;
@@ -55,11 +55,15 @@ p {
 
 .touch {
   border: solid 1px rgba(137, 156, 155, 0.9);
-  padding: 25px 50px;
   border-radius: 5px;
   font-size: 2vw;
   color: rgb(241, 241, 242);
   box-shadow: 0 0 15px rgba(241, 241, 242, 0.2);
+
+}
+.touch span {
+  display: inline-block;
+  padding: 25px 50px;
 }
 
 .touch:hover {
@@ -246,6 +250,7 @@ p {
 
 .eg-english > .eg-title {
   color: #b06b79;
+  font-weight: 500;
 }
 
 /* MIDDLE SECTION: Responsive design 500pxw & 800pxw */
@@ -427,4 +432,42 @@ table {
   max-width: 300px;
   width: 30%;
   margin: auto;
+}
+
+
+@media (min-width: 501px) and (max-width: 1024px) {
+  .main-card {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+
+
+/* Controls */
+.controls {
+  margin: 30px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgb(225, 221, 233);
+  border: solid 1px rgb(187, 181, 199);
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  background-color:rgb(236, 233, 241);
+  border: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: rgb(139, 132, 155);
+  width: 400px;
+  line-height: 1.5;
+  margin-left: 5px;
 }

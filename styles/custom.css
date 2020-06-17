@@ -1,0 +1,26 @@
+.header {
+    border: solid 1px red;
+    text-align: center;
+}
+
+.heading-area {
+    border: solid 1px brown;
+}
+.author-heading {
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav {
+    background-color: #def4f0;
+}
+.card-area {
+    background-color: #def4f0;
+
+}
+
+
+.card-img-top {
+    object-fit: contain;
+    max-height: 180px;
+    width: auto;
+}
