@@ -1,0 +1,563 @@
+
+<style>
+html, body {
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    font-family: 'Avenir Next';
+
+}
+.front-back__container {
+    width: 800px;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.front-back__container:hover {
+    border: solid 2px rgba(29, 233, 189, 0.6);
+    border-radius: 4px;
+}
+.mobile #content  {margin: 0;}
+.card {
+background-color: white; 
+width: 100vw;
+margin: 0;
+padding: 0;
+text-align: left;
+}
+.main-card {
+    border-radius: 4px;
+    box-shadow: 0px 5px 18px 0px rgba(50, 50, 50, 0.52);
+    width: 300px;
+    margin: 50px auto;
+    font-family: 'Avenir Next';
+    position: relative;
+    overflow: hidden;
+}
+
+.main-card.single {
+    width: 350px;
+}
+.main-card ol, ul {
+text-align: left;
+}
+.word-content {
+    background: white;
+}
+.word {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}   
+
+
+
+.word-t b {
+color: red;
+}
+
+img {
+    width: 300px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.example, .example-t, .example-t2 {
+    padding: 10px 5px 20px 5px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+}
+
+
+.example-t b {
+color: rgba(0,0,0,0);
+background-color: rgba(100,222,237,0.2);
+border-bottom: solid rgb(100,222,237);
+}
+
+.example-t2 b {
+color: rgb(50,112,137);
+background-color: rgba(100,222,237,0.2);
+border-bottom: solid rgb(100,222,237);
+}
+
+#extra-content,
+#extra-content2 {
+    background: rgb(207, 222, 237);
+    color: rgb(83, 93, 102);
+    display: none;
+}
+
+#extra-content::before,
+#extra-content2::before  {
+    content: "▲";
+    color: rgb(207, 222, 237);
+    display: block;
+    position: relative;
+    top: -4px;
+    left: 97%;
+    transform: translate(-50%, -50%);
+}
+
+.extra {
+    padding: 0 30px 20px 30px;
+    font-size: 14px;
+}
+
+.translation-content {
+    background: rgb(70, 82, 82);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+    padding: 30px 8px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: 400;
+}
+
+.translation {
+    color: rgb(248, 224, 114);
+font-size: 17px;
+    line-height: 1.5;
+}
+
+.definition {
+    color: #EEE;
+    padding: 0 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.tags {
+    border-bottom: solid 2px rgb(233,233,233);
+    padding: 0 20px 10px 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: #333;
+}
+.word-type {
+    margin: 10px 20px 0 20px;
+    text-align: justify;
+}
+.word-type b {
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    padding: 0 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#expand-extra,
+#expand-extra2 {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#expand-extra:hover,
+#expand-extra2:hover {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+}
+
+#cover {
+width: 400px;
+
+}
+
+#cover::after {
+content: "☜";
+font-size: 20px;
+position: absolute;
+bottom: -5px;
+right: 10px;
+color: black;
+background: white;
+border-radius: 20px;
+padding: 0 3px;
+padding-bottom: 6px;
+
+}
+
+
+#cover-tip {
+display: block;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+text-align: center;
+color: rgba(0,0,0,0);
+
+}
+.image-header {
+position: relative !important;
+ overflow: hidden;
+}
+
+#cover-tip:hover {
+color: black;
+background-color: rgba(255,255,255,0.7);
+}
+.tip {
+margin-top: 30%;
+}
+
+#container {
+width: 100%;
+margin: 0;
+
+}
+
+.hidden {
+    display: none;
+}
+@media (max-width: 600px) {
+
+.front-back__container {
+    width: auto;
+    margin: 90px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.image-header {
+position: relative;
+}
+
+#cover {
+margin-left: 0;
+width: 400px;
+}
+
+#cover::after {
+content: "☜";
+font-size: 20px;
+position: absolute;
+bottom: -5px;
+right: 10px;
+color: black;
+background: white;
+border-radius: 20px;
+padding: 0 3px;
+padding-bottom: 6px;
+}
+
+
+#cover-tip {
+display: block;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 1;
+top: 50%;
+text-align: center;
+margin-left: 50%;
+transform: translate(-50%, -50%);
+color: rgba(0,0,0,0);
+opacity: 0;
+}
+
+#cover-tip:hover {
+color: black;
+background-color: rgba(255,255,255,0.7);
+opacity: 0.9;
+}
+
+#cover-tip img {
+width: 100px;
+height: 100px;
+border-radius: 80px;
+position: absolute;
+margin-top: 20px;
+top: 80px;
+text-align: center;
+margin-left: 0%;
+transform: translate(-50%, -50%);
+box-shadow: 0px 5px 18px 0px rgba(50, 50, 50, 0.52);
+}
+
+#cover-tip div {
+display: block;
+width: 100px;
+position: absolute;
+top: -10%;
+text-align: center;
+margin-left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+}
+
+#cover-tip img:hover {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+z-index: 30;
+}
+.tip {
+margin-top: 30%;
+}
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Inter:wght@300&family=Montserrat:wght@700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Pragati+Narrow&family=Roboto+Slab&family=Roboto:wght@700;900&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Baloo+Bhaina+2:wght@400;500&family=IBM+Plex+Mono&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+<header>
+    <p class="tags">This view is an approximation of what it looks like in Anki</p>
+</header>
+
+<main>
+
+    <!-- EN > DE -->
+    <div class="front-back__container">
+
+        <!-- FRONT -->
+        <div class="front__container">
+            <h2>EN > DE Front</h2>
+            <div class="main-card">
+                <section class="image-header">
+                    <div id="cover" onmouseover="showTip()" onmouseout="hideTip()"><img src="./images/hat.png"></div>
+                    <div id="cover-tip"><div class="tip">This is some tip!</div></div>
+                    <!--<div id="cover-sign" >☜</div>-->
+                </section>
+                <section class="word-content">
+                    <div class="word">
+                        the cap, hat
+                    </div>
+                    <div class="example-t">Papa! Ich habe Meis <b>Hut</b> gefunden!</div>
+                <section class="translation-content">
+                    <div class="definition">This is the definition in german</div>
+                </section>
+        </div>
+        </div>
+
+        <!-- BACK -->
+        <div class="back">
+            <h2>EN > DE Back</h2>
+            <div class="main-card">
+                <section class="image-header">
+                    <div id="cover" onmouseover="showTip()" onmouseout="hideTip()"><img src="./images/hat.png"></div>
+                    <div id="cover-tip"><div class="tip">This is some tip!</div></div>
+                    <!--<div id="cover-sign" >☜</div>-->
+                </section>
+                <section class="word-type">
+                    <b>noun</b>
+                </section>
+                <section class="word-content">
+                    <div class="word" style="padding-left: 5px; padding-right: 5px;">
+                    Hut, der
+                    </div>
+                    <div class="example-t2">Papa! Ich habe Meis <b>Hut</b> gefunden!</div>
+                    <svg onclick="showTOC()" id="expand-extra" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px"
+                    viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+                    c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+                    c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z" />
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    </svg>
+                </section>
+                <section id="extra-content">
+                    <div class="extra">Some extra information</div>
+                </section>
+
+                <section class="translation-content">
+                    <div class="translation">the cap, hat</div>
+                    <div class="definition">Definition in German</div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DE > EN -->
+
+
+
+    <div class="front-back__container">
+        <!-- FRONT -->
+        <div class="front__container">
+            <h2>DE > EN Front</h2>
+            <div class="main-card single" >
+                <section class="image-header">
+                    <div id="cover" style="filter: blur(20px);   transform: scale(1.8); ">
+                        <img src="./images/dislike.png">
+                    </div>
+                    </section>
+                    <section class="word-content" style=" padding: 50px 20px; top: 50px; display: block;  width: 360px; background: rgba(255,255,255,0.5); color: white; border-bottom-right-radius: 200px; border-top-left-radius: 200px; position: absolute; top: 50%; left: 50%;     transform: translate(-50%, -50%);">
+                        <div class="word">
+                            missfallen
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- BACK -->
+        <div class="back__container">
+
+            <h2>DE > EN Back</h2>
+            <div class="main-card">
+                <section class="image-header">
+                    <div id="cover" onmouseover="showTip()" onmouseout="hideTip()">
+                        <img src="./images/dislike.png">
+                    </div>
+                    <div id="cover-tip">
+                        <div class="tip">
+                            No echo de menos (<b>miss</b>) tus <b>fallos</b>, siempre los he <u>detestado</u>
+                        </div>
+                    </div>
+                </section>
+                <section class="word-type">
+                    <b>untrennbar</b>
+                </section>
+                <section class="word-content">
+                    <div class="word">
+                        missfallen
+                    </div>
+                    <div class="example">ihr Benehmen <b>missfält</b> mir</div>
+                    <svg onclick="showTOC2()" id="expand-extra2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px"
+                    viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+                    xml:space="preserve">
+                    <g>
+                        <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+            c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+            c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z" />
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    </svg>
+                </section>
+                <section id="extra-content2">
+                    <div class="extra">
+                        <b>utv.</b> missfallen <br>
+                        <b>jdm etw misfallen [an jdm]:</b> sb dislikes sth [about sb] <br>
+                        <b>n. das Missfallen:</b> the displeasure, dislike
+                    </div>
+                </section>
+            
+                <section class="translation-content">
+                    <div class="translation">to displeasure, dislike</div>
+                    <div class="definition">Missfallen auslösen (trigger), hervorrufen (cause)</div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
+
+<script>
+
+    // First pair
+            var z = true;
+        function showTOC() {
+            var b = document.getElementById("extra-content");
+            var ba = document.getElementById("expand-extra");
+            if (z === true) {
+                b.style.display = "block";
+                z = false;
+            }
+            
+            else {
+                z = true;
+                b.style.display = "none";
+                ba.style.background = "none";
+            }
+        }
+
+
+        // Second pair
+        var r = true;
+        function showTOC2() {
+            var b = document.getElementById("extra-content2");
+            var na = document.getElementById("expand-extra2");
+
+            if (r === true) {
+                b.style.display = "block";
+                r = false;
+            }
+            
+            else {
+
+                b.style.display = "none";
+                na.style.background = "none";
+                r = true;
+            }
+        }
+</script>
+</body>

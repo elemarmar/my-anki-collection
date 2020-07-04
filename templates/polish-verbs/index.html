@@ -25,12 +25,12 @@
         <div class="top section">
             <div class="touch">
                 <span id="nied" onclick="showTouch(1)">niedokonany</span>
-                <span id="imperfective">robić</span>
+                <span id="imperfective">brać</span>
             </div>
             <div class="wolf"><img class="wolf-img" src="images/whitewolf.png"></div>
             <div class="touch">
                 <span id="dok" onclick="showTouch(2)">dokonany</span>
-                <span id="perfective"></span>
+                <span id="perfective">wziąć</span>
             </div>
         </div>
 
@@ -44,13 +44,17 @@
                 <div class="geralt">
                     <img class="geralt-img" src="images/geralt.png">
                 </div>
-                <p>Hello tHello this is iI talHello this is a message where I talhis is a message where I talk and
-                    talk and talk</p>
+                <p>
+                    <ul>
+                        <li>brać prysznic</li>
+                        <li>wziąć prysznic</li>
+                    </ul>
+                </p>
             </div>
 
             <!-- Verb in infinitive -->
             <div class="verb">
-                <p class="verb-heading">Verb</p>
+                <p class="verb-heading">to take</p>
             </div>
 
             <!-- Example box -->
@@ -60,13 +64,13 @@
                 <!-- Polish example -->
                 <div class="mySlides fade eg-polish">
                     <h3 class="eg-title">zdanie po polsku</h3>
-                    <p>Hello asd jsad alsd jalsmd alsm dsam djw ds</p>
+                    <p>Dziś rano wziąłem prysznic.</p>
                 </div>
 
                 <!-- English example -->
                 <div class="mySlides fade eg-english">
                     <h3 class="eg-title">zdanie po angielsku</h3>
-                    <p>Hello theraskd sand laskdn asld lsakd awnd sne</p>
+                    <p>I took a shower this morning.</p>
                 </div>
 
                 <!-- Slideshow dots -->
@@ -330,14 +334,14 @@
             </div>
         </div>
 
-        <div id="present" style="display: none">-, -, -, -, -, -</div>
-        <div id="future" style="display: none">-, -, -, -, -, -</div>
-        <div id="pastperf-m" style="display: none">-, -, -, -, -, -</div>
-        <div id="pastperf-f" style="display: none">-, -, -, -, -, -</div>
-        <div id="pastperf-n" style="display: none">-, -, -, -, -, -</div>
-        <div id="pastimperf-m" style="display: none">-, -, -, -, -, -</div>
-        <div id="pastimperf-f" style="display: none">-, -, -, -, -, -</div>
-        <div id="pastimperf-n" style="display: none">-, -, -, -, -, -</div>
+        <div id="present" style="display: none">biorę, bierzesz, bierze, bierzemy, bierzecie, biorą</div>
+        <div id="future" style="display: none">wezmę, weźmiesz, weźmie, weźmiemy, weźmiecie, wezmą</div>
+        <div id="pastperf-m" style="display: none">brałem, brałeś, brał, braliśmy, braliście, brali</div>
+        <div id="pastperf-f" style="display: none">brałam, brałaś, brała, brałyśmy, brałyście, brały</div>
+        <div id="pastperf-n" style="display: none">-, -, brało, -, -, brały</div>
+        <div id="pastimperf-m" style="display: none">wziąłem, wziąłeś, wziął, wzięliśmy, wzięliście, wzięli</div>
+        <div id="pastimperf-f" style="display: none">wzięłam, wzięłaś, wzięła, wzięłyśmy, wzięłyście, wzięły</div>
+        <div id="pastimperf-n" style="display: none">-, -, wzięło, -, -, wzięły</div>
 
         <!-- Footer with witcher symbols -->
         <footer class="footer">
@@ -346,7 +350,7 @@
     </div>
 
     <!-- Control section -->
-    <div class="controls">
+    <!-- <div class="controls">
             <label for="present-tense">Present tense:
                 <input id="present-tense" type="text">
             </label>
@@ -361,7 +365,7 @@
 
 
             <input type="button" value="Update!" onClick="presenTense()">
-    </div>
+    </div> -->
 
 
 
@@ -522,6 +526,7 @@
 
         // Convert a string to array to table
 
+        string_to_array("present", 1);
         string_to_array("future", 2);
         string_to_array("pastperf-m", 3);
         string_to_array("pastperf-f", 4);
@@ -559,8 +564,10 @@
             var miniTouch = document.getElementsByClassName("mini-touch");
             console.log(miniTouch.length);
             for (var i = 0; i < miniTouch.length; i++) {
-                if (miniTouch[i].innerText = "-") {
+                console.log(miniTouch[i].innerText);
+                if (miniTouch[i].innerText == "-") {
                     miniTouch[i].innerText = "Ø";
+                    console.log(miniTouch[i].innerText);
                 }
 
                 if (miniTouch[i].innerText == "Ø") {

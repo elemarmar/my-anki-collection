@@ -29,19 +29,23 @@
                 </nav>
 
 
-                <div class="question">¿Cuál es el punto más importante en un objeto flex que no sepamos?</div>
+                <div class="question">¿Cómo podemos guardar datos en el propio navegador?</div>
 
                 <div class="info-bar">
                     <ul class="info-bar flex-container">
 
                         <!-- Número de módulo -->
-                        <li class="modulo">Módulo 1</li>
+                        <li class="modulo">Módulo 2</li>
 
                         <!-- Iconos contenido -->
                         <li class="icons">
-                            <i class="fab fa-html5 fa-2x"></i>
-                            <i class="fab fa-css3-alt fa-2x"></i>
+                            <i class="fab fa-html5 fa-2x hidden"></i>
+                            <i class="fab fa-css3-alt fa-2x hidden"></i>
+                            <i class="fab fa-js-square hidden"></i>
+                            <i class="fab fa-react hidden"></i>
+                            <i class="fab fa-git-alt hidden"></i>
                         </li>
+                        <p class="icon-text" style="display: none">javascript</p>
                 </div>
 
                 
@@ -50,11 +54,16 @@
             <!-- Main content -->
             <main class="section">
                 <div class="answer">
-                    This is a <b>keyword</b> with some <i>code</i> Y aquí más información. Claro es importante ser interesante <b>No puede</b> pero <i>var hell = 10</i> exactly.
+                    Esto se hace mediante el llamado <b>LocalStorage</b> o <b>SessionStorage</b>. <i>LocalStorage</i> permite almacenar permanentemente los datos, mientras que <i>SessionStorage</i> sólo los guarda para una sesión 👉🏻 si cerramos la página se borrarán. <br>
+                    Para guardar datos es tan sencillo como usar <i>setItem</i> cuyo primer parámetro es el nombre que le ponemos a los datos y luego los datos que queremos guardar, que pueden ser de cualquier tipo primitivo (cadena, número, booleano). Por ejemplo:
                 </div>
                 <div class="terminal">
                     <img src="terminal-bar.png">
-                    <div class="code">Hellos this is code ashd</div>
+
+                    <!-- Terminal code: in Anki it is automatically formatted after copying from e.g. visual code but here we need to apply styles -->
+                    <div class="code">
+                       <div><div><span style="color: #b2cacd;"> </span><span style="color: #e66533;">const</span><span style="color: #b2cacd;"> </span><span style="color: #d5971a;">tasks</span><span style="color: #b2cacd;"> </span><span style="color: #df769b;font-weight: bold;">=</span><span style="color: #b2cacd;"> [</span></div></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><div><span style="color: #b2cacd;">  { name: </span><span style="color: #49e9a6;">'Recoger setas en el campo'</span><span style="color: #b2cacd;">, completed: </span><span style="color: #7060eb;">true</span><span style="color: #b2cacd;"> },</span></div></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><div><span style="color: #b2cacd;">  { name: </span><span style="color: #49e9a6;">'Comprar pilas'</span><span style="color: #b2cacd;">, completed: </span><span style="color: #7060eb;">true</span><span style="color: #b2cacd;"> },</span></div></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><div><span style="color: #b2cacd;">  { name: </span><span style="color: #49e9a6;">'Poner una lavadora de blancos'</span><span style="color: #b2cacd;">, completed: </span><span style="color: #7060eb;">true</span><span style="color: #b2cacd;"> },</span></div></div></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><div><span style="color: #b2cacd;">  {</span><span style="color: rgb(178, 202, 205);">name: </span><span style="color: rgb(73, 233, 166);">'Aprender cómo funcionan los objetos de JavaScript'</span><span style="color: rgb(178, 202, 205);">,&nbsp;</span><span style="color: rgb(178, 202, 205);">completed: </span><span style="color: rgb(112, 96, 235);">false</span><span style="color: rgb(178, 202, 205);">,</span><span style="color: rgb(178, 202, 205);">},</span></div></div></blockquote><div><div><span style="color: #b2cacd;">];</span></div><br><div><span style="color: #e4b781;">localStorage</span><span style="color: #df769b;font-weight: bold;">.</span><span style="color: #16a3b6;">setItem</span><span style="color: #b2cacd;">(</span><span style="color: #49e9a6;">'tasks'</span><span style="color: #b2cacd;">, </span><span style="color: #d5971a;">JSON</span><span style="color: #df769b;font-weight: bold;">.</span><span style="color: #49d6e9;">stringify</span><span style="color: #b2cacd;">(</span><span style="color: #e4b781;">tasks</span><span style="color: #b2cacd;">));</span></div><br><div><span style="color: #e66533;">const</span><span style="color: #b2cacd;"> </span><span style="color: #d5971a;">savedTasks</span><span style="color: #b2cacd;"> </span><span style="color: #df769b;font-weight: bold;">=</span><span style="color: #b2cacd;"> </span><span style="color: #d5971a;">JSON</span><span style="color: #df769b;font-weight: bold;">.</span><span style="color: #49d6e9;">parse</span><span style="color: #b2cacd;">(</span><span style="color: #e4b781;">localStorage</span><span style="color: #df769b;font-weight: bold;">.</span><span style="color: #16a3b6;">getItem</span><span style="color: #b2cacd;">(</span><span style="color: #49e9a6;">'tasks'</span><span style="color: #b2cacd;">));</span></div><div><span style="color: #49ace9;">console</span><span style="color: #df769b;font-weight: bold;">.</span><span style="color: #49d6e9;">log</span><span style="color: #b2cacd;">(</span><span style="color: #e4b781;">savedTasks</span><span style="color: #df769b;font-weight: bold;">.</span><span style="color: #d67e5c;">length</span><span style="color: #b2cacd;">); </span><span style="color: #5b858b;font-style: italic;">//4</span></div></div>
+                    </div>
                 </div>
             </main>
 
@@ -71,13 +80,22 @@
     <!-- Add JavaScript -->
     <script>
         // Language tag to icon
-
-
-        // Hover effect: click to show answer
-
-        // Apply code style to words in between ` `
-
-
+        const icons = document.querySelector('.icon-text');
+        if(icons.innerHTML.includes("javascript")) {
+            document.querySelector('.fa-js-square').classList.remove('hidden');
+        }
+        if(icons.innerHTML.includes("git")) {
+            document.querySelector('.fa-git-alt').classList.remove('hidden');
+        }
+        if(icons.innerHTML.includes("react")) {
+            document.querySelector('.fa-react').classList.remove('hidden');
+        }
+        if(icons.innerHTML.includes("css")) {
+            document.querySelector('.fa-css3-alt').classList.remove('hidden');
+        }
+        if(icons.innerHTML.includes("html")) {
+            document.querySelector('.fa-html5 ').classList.remove('hidden');
+        }
     </script>
     </body>
 </html>
