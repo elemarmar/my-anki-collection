@@ -2,36 +2,36 @@
 
 <img src="./readme-images/image-20200704131851331.png" alt="image-20200704131851331" style="zoom:50%;" />
 
-Introduction to the template
+This is my German vocabulary card template! I use this card to train new words (not sentences). It includes a picture related to the meaning of the word, a hint that shows up when hovering over the picture and some extra information that appears when clicking on the arrow. For a preview, click [here](). If you want to download the template you can do so from here: [Download]().
 
 ## Study & Usage
 
-When you create a card, this will automatically create two cards:
+- When you create a card, a reverse card will automatically be generated :
 
-- **German to Native language card**
-- **Native language to German card**
+  - **German > Native language card**
+  - **Native language > German card**
 
 ### DE > EN
 
 <img src="./readme-images/image-20200704132359114.png" alt="image-20200704132359114" style="zoom:50%;" />
 
-The front card only shows the word we created in German. The background is the picture we uploaded but blurred so it doesn't spoil the meaning while keeping differentiation among all cards.
+The front card displays the German word. The background consists of a blurred version of the uploaded image to allow for quizzing and in order to differentiate the cards.
 
 <img src="./readme-images/image-20200704132455002.png" alt="image-20200704132455002" style="zoom:50%;" />
 
-The back card shows us the picture related to the word. If we hover over it or tap on it (mobile) it shows us the hint or mnemotechnique rule we assigned that word to better remember it:
+The back card shows the now clear image related to the German word. Hovering (mouse) or tapping on (mobile) the image will reveal the hint:
 
 ![Jul-04-2020 14-33-01](./readme-images/Jul-04-2020 14-33-01.gif)
 
-The next area is the word area. Here we find the word in german, some examples that use that word and a tag that identifies the type of word. This is very useful when trying to differentiate between trennbar and untrennbar verbs:
+The next area is the word area. Here we find the word in German, some examples and a tag that identifies the word type. This is very useful when trying to differentiate between trennbar and untrennbar verbs:
 
 <img src="./readme-images/image-20200704133749851.png" alt="image-20200704133749851" style="zoom:50%;" />
 
-Bellow the examples we find an arrow. If we click on it, it will drop down a menu where we can see extra information about the word. This could include fixed expressions using that word, the plural if the word was a noun, etc.:
+Below the examples is an arrow which, upon clicking or tapping, will open a drop menu which reveals extra information about the word—e.g. fixed expressions or for forms:
 
 ![Jul-04-2020 14-33-22](./readme-images/Jul-04-2020 14-33-22.gif)
 
-Finally we have the area of translation and meaning. In this area we find the translation of the word and an optional definition that could be in German, to practice more!
+Finally, an English translation and a German definition are located at the bottom. Üben macht den Meister! 
 
 <img src="./readme-images/image-20200704134029520.png" alt="image-20200704134029520" style="zoom:50%;" />
 
@@ -41,37 +41,37 @@ Finally we have the area of translation and meaning. In this area we find the tr
 
 <img src="./readme-images/image-20200704134142468.png" alt="image-20200704134142468" style="zoom:50%;" />
 
-The front card shows us the picture, the translation of the word and an example where the word is missing. This is specially interesting because we are not only trying to recall the German word but also conjugate (plural/singular)? it within a sentence.
+The front card shows a related image, a translation of the target vocabulary and a fill-in-the-blank example sentence. This is particularly useful not only for training vocabulary recall but also for practicing ancillary information such as conjugations and declensions.
 
 <img src="./readme-images/image-20200704134257522.png" alt="image-20200704134257522" style="zoom:50%;" />
 
-The back card looks exactly the same as the back card for DE > EN except that the keyword in the example is styled differently. 
+The back card is identical to the back card for DE > EN with the exception that the keyword in the example is styled differently. 
 
 ---
 
 ### Input
 
-This template has 9 inputs:
+1. This template has 9 inputs:
 
-1. **front:** the word we want to memorize
-2. **front+:** the word + sth extra. For example, if we are learning a noun, we would write "Mann" in front but "Mann, der" in front+, so that we are not only have to guess the meaning but also the gender!
-3. **translation**
-4. **example**
-5. **extra**
-6. **cover (picture)**
-7. **cover-tip (hint)**
-8. **definition**
-9. **word type** (trennbar, untrennbar, ...)
+   1. **front:** target word
+   2. **front+:** the target word + any additionaly information. When training the word "Mann," for example,  "Mann" should be entered in **front**, and "Mann, der" in **front+** so that both meaning and gender are quizzed.
+   3. **translation**
+   4. **example**
+   5. **extra**
+   6. **cover (picture)**
+   7. **cover-tip (hint)**
+   8. **definition**
+   9. **word type** (trennbar, untrennbar, ...)
 
 <img src="./readme-images/image-20200704134748648.png" alt="image-20200704134748648" style="zoom:50%;" />
 
 <img src="/Users/elemarmar/Documents/web development/Repositories/my-anki-collection/templates/german-vocab/readme-images/image-20200704134648972.png" alt="image-20200704134648972" style="zoom:50%;" />
 
-In this example we only fill out "Front" since this verb doesn't have extra info. But let's have a look at other examples where this might be different:
+In this example only **front** is filled in, since this verb doesn't contain extra info. Below are two examples which demonstrate the difference between cards with and without **front+**:
 
 <img src="/Users/elemarmar/Documents/web development/Repositories/my-anki-collection/templates/german-vocab/readme-images/image-20200704134820522.png" alt="image-20200704134820522" style="zoom:50%;" />
 
-In this example, becase it is a noun, we want Anki to ask us about "Aufstand" so that we can guess both its meaning but also its gender:
+Here, dealing with a noun,  **front+** reinforces both vocubulary recall as well as gender:
 
 <img src="./readme-images/image-20200704134909849.png" alt="image-20200704134909849" style="zoom:50%;" />
 
@@ -79,40 +79,40 @@ In this example, becase it is a noun, we want Anki to ask us about "Aufstand" so
 
 <img src="./readme-images/image-20200704134941002.png" alt="image-20200704134941002" style="zoom:50%;" />
 
-> on the back card it is always shown Front+ but if the field were empty because we didn't need it, it would then show Front.
+> **Front+** will be displayed on the back of the card unless the field is left empty, in which case, **Front** will be displayed instead.
 
 <img src="/Users/elemarmar/Documents/web development/Repositories/my-anki-collection/templates/german-vocab/readme-images/image-20200704135054454.png" alt="image-20200704135054454" style="zoom:50%;" />
 
-In this example we have a translation and an example. ⚠️ **Important**: if you want the words in the example to be hidden when asked about the German word you have to make them bold like in the example. This would give us:
+⚠️ **Important**: To hide words in the German example sentence, simply enter the desired words in **bold**:
 
 <img src="./readme-images/image-20200704135201048.png" alt="image-20200704135201048" style="zoom:50%;" />
 
-> Note how in this example we don't have any extra information. Let's have a look at an example where we do have extra info.
+> Notice how no extra information is provided in this example. Below is an example featuring extra info.
 
 <img src="./readme-images/image-20200704135745517.png" alt="image-20200704135745517" style="zoom:50%;" />
 
-> Here we can see the style of extra information
->
 > ![image-20200704135819106](./readme-images/image-20200704135819106.png)
 
-Finally we have the fields for the image, cover-tip, definition and word type:
+Last but not least, the image field, cover-tip field, definition and word type fields:
 
 ![image-20200704135904579](./readme-images/image-20200704135904579.png)
 
-Note how we can just copy past a screenshot on the field and it will show. 
+>  Images can simply be copied and pasted into the field. 
 
-⚠️ **Important**: When writing the word type it is important to make them bold so they are styled the way that they are presented here. Also the spaces between tags must not be bold, otherwise, two tags that are sepparate would appear to be connected, both formmated with the black background.
+⚠️ **Important**: Words entered in word type field must be entered in **bold**. In order to avoid unwanted grouping, it is important that the spaces between tags *not* be bold.  Bolded spaces will result in word grouping as seen below.
 
-> If you write this:
+> Writing the following:
 > ![image-20200704140121263](./readme-images/image-20200704140121263.png)
 >
-> without making the space between the two words not bold, you will get:
+> with a bold space will yield:
 >
 > <img src="./readme-images/image-20200704140157374.png" alt="image-20200704140157374" style="zoom:33%;" />
 >
-> The way to fix this is to simply "unbold" the space between words:
+> To fix this, simply "unbold" the space between words:
 >
 > <img src="./readme-images/image-20200704140226294.png" alt="image-20200704140226294" style="zoom:50%;" />
+
+> 👉🏻  Cool and konstenlose images can be found at [Unsplash](https://unsplash.com/) which will make your cards more pleasant to look at! 
 
 <img src="./readme-images/image-20200704140038458.png" alt="image-20200704140038458" style="zoom:50%;" />
 
@@ -120,8 +120,11 @@ Note how we can just copy past a screenshot on the field and it will show.
 
 ---
 
-And this is how it works! If you want to see a working visualization of the cards from the browser you can check it out [here](). If you want to download the template you can do so from here [Download]().
+And this is how it works! Again, everything can be previewed and toyed with [here](). To download the template, click on [Download]().
 
 <img src="./readme-images/image-20200704135608206.png" alt="image-20200704135608206" style="zoom:50%;" />
 
-Bare in mind I'm still working on improvements, and code cleaning. If you have any suggestion, you encounter a bug or you liked it and would like me to design a card template for you, let me know!
+Bear in mind I'm still working on improvements and cleaning up the code. If you have any suggestions, encounter any bugs or  would like me to design a card template for you, let me know! 🦊
+
+
+

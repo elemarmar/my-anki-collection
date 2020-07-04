@@ -78,6 +78,45 @@ Actualmente la tarjeta acepta los siguientes iconos (aquí pongo las keywords ex
 
 ---
 
+### Importante
+
+Para ver la tarjeta bien hay que añadirle dos imágenes en la carpeta de media de Anki. Si te saltas este paso ni el logo ni la barra de la terminal se verán :(. Si quieres saber dónde está la carpeta puedes seguir estos pasos:
+
+Las imágenes en cuestión son:
+
+- aa
+- bb
+
+**Si tienes un Mac**
+
+Ve a esta dirección: `~/Library/Application Support/Anki2`
+
+Puedes acceder a través de finder pulsando en "ir a la carpeta..."
+
+<img src="./readme-images/image-20200704221240566.png" alt="image-20200704221240566" style="zoom: 67%;" />
+
+![image-20200704221305966](./readme-images/image-20200704221305966.png)
+
+Después te metes en "User 1" o "User" o cualquier nombre que hayas puesto al instalar Anki.
+
+![image-20200704221317581](./readme-images/image-20200704221317581.png)
+
+Dentro hay una carpeta que se llama "collection.media" donde deberás pegar las dos imágenes de antes.
+
+![image-20200704221335539](./readme-images/image-20200704221335539.png)
+
+
+
+**Si tienes un windows** **o linux**
+
+Puedes echarle un ojo a este post: https://qastack.mx/superuser/963526/where-does-anki-store-media
+
+![image-20200704221956724](./readme-images/image-20200704221956724.png)
+
+O mírate la documentación oficial:
+
+![image-20200704222040874](./readme-images/image-20200704222040874.png)
+
 ## Échale un ojo a los vídeos
 
 He subido un par de vídeos de cómo crear una tarjeta y cómo se ven cuando las estudias en el ordenador y en el móvil. Los vídeos se pueden ver aquí:

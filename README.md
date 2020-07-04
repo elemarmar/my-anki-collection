@@ -1,8 +1,12 @@
-# The temple of Templates
+# The Temple of Templates
 
-Hello! This is my **temple of templates**. In this temple you'll find some of the templates I've crafted for learning languages and other stuff using Anki.
 
-If you head over to the web you can see all the templates I have uploaded so far, and interact with some of them (if they have interactive components). I'm still working on them so some of them might behave unexpectedly or be written in a messy way. 
+
+**Herzlich Willkommen in meinem Tempel**!
+
+ This is my **temple of templates**. Here you'll find some of the templates I've crafted for learning languages and for other subjects.
+
+If you head over to the web you can see all the templates I have uploaded so far and play around with their interactive components. I'm still working on them, so some of them might behave strangely. 
 
 So far I have uploaded the following:
 
@@ -14,7 +18,7 @@ So far I have uploaded the following:
 
 ## How to install the templates
 
-For the most part you just download the anki file `.apkg` and open it with Anki. For those cards where it might contain pictures such as the Polish conjugation you might need to download the pictures and paste them in the media folder of. your Anki program which might differ depending on your OS.
+Most templates can just be downloaded as an anki file `.apkg` and opened  with Anki. For cards containing pictures such as the Polish conjugation it may be necessary to download the pictures and place them in the Anki program's media folder, which might differ depending on your OS.
 
 From the [Anki manual](https://apps.ankiweb.net/docs/manual20.html#importing-media) on importing media:
 
@@ -30,5 +34,5 @@ From the [Anki manual](https://apps.ankiweb.net/docs/manual20.html#files) on fil
 
 ---
 
-👩🏻‍💻 I'm open to suggestions and orders to create templates for you!  Send me a message and I'll see what I can do!
+👩🏻‍💻 I'm open to suggestions and requests for your own personalized templates!  Just send me a message and I'll see what I can do!
 
