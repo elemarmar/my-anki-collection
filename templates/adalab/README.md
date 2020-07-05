@@ -54,7 +54,7 @@ El template cuenta con 4 campos a rellenar:
 
 La imagen superior nos daría de resultado:
 
-<img src="./readme-images/image-20200704142729734.png" alt="image-20200704142729734" witdh="500px" />
+<img src="./readme-images/image-20200704142729734.png" alt="image-20200704142729734" width="700px" />
 
 **Sobre los iconos**
 
