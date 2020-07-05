@@ -10,9 +10,9 @@ If you head over to the web you can see all the templates I have uploaded so far
 
 So far I have uploaded the following:
 
-- [Polish conjugation card](./templates/polish-verbs/README.md) (working on fixing some issues)
-- [German vocabulary cards](./templates/german-vocab/README.md)
-- [Adalab - learning web development concepts](./templates/adalab/README.md)
+- [Polish conjugation card](./templates/polish-verbs) (working on fixing some issues)
+- [German vocabulary cards](./templates/german-vocab)
+- [Adalab - learning web development concepts](./templates/adalab)
 
 ---
 
