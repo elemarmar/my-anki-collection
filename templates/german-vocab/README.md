@@ -31,7 +31,7 @@ The back card shows the now clear image related to the German word. Hovering (mo
 
 
 <p align="center">
-  <img src="readme-images/hover.gif" width="200px/>
+  <img src="readme-images/hover.gif" width="300px/>
 </p>
 
 The next area is the word area. Here we find the word in German, some examples and a tag that identifies the word type. This is very useful when trying to differentiate between trennbar and untrennbar verbs:
@@ -54,7 +54,7 @@ Finally, an English translation and a German definition are located at the botto
 
 ---
 
-## EN > DE
+### EN > DE
 <p align="center">
 <img src="./readme-images/image-20200704134142468.png" alt="image-20200704134142468" width="200px" />
 </p>
@@ -69,42 +69,42 @@ The back card is identical to the back card for DE > EN with the exception that 
 
 ---
 
-### Input
+## Input
 
-1. This template has 9 inputs:
+This template has 9 inputs:
 
-   1. **front:** target word
-   2. **front+:** the target word + any additionaly information. When training the word "Mann," for example,  "Mann" should be entered in **front**, and "Mann, der" in **front+** so that both meaning and gender are quizzed.
-   3. **translation**
-   4. **example**
-   5. **extra**
-   6. **cover (picture)**
-   7. **cover-tip (hint)**
-   8. **definition**
-   9. **word type** (trennbar, untrennbar, ...)
+1. **front:** target word
+2. **front+:** the target word + any additionaly information. When training the word "Mann," for example,  "Mann" should be entered in **front**, and "Mann, der" in **front+** so that both meaning and gender are quizzed.
+3. **translation**
+4. **example**
+5. **extra**
+6. **cover (picture)**
+7. **cover-tip (hint)**
+8. **definition**
+9. **word type** (trennbar, untrennbar, ...)
    
 <p align="center">
 <img src="./readme-images/image-20200704134748648.png" alt="image-20200704134748648" width="200px" />
 </p>
 
 <p align="center">
-<img src="./readme-images/image-20200704134648972.png" alt="image-20200704134648972" style="zoom:50%;" />
+<img src="./readme-images/image-20200704134648972.png" alt="image-20200704134648972" style="zoom:300px;" />
 </p>
 
 In this example only **front** is filled in, since this verb doesn't contain extra info. Below are two examples which demonstrate the difference between cards with and without **front+**:
 
 <p align="center">
-<img src="./readme-images/image-20200704134820522.png" alt="image-20200704134820522" style="zoom:50%;" />
+<img src="./readme-images/image-20200704134820522.png" alt="image-20200704134820522" style="zoom:300px;" />
 </p>
 
 Here, dealing with a noun,  **front+** reinforces both vocubulary recall as well as gender:
 
 <p align="center">
 <img src="./readme-images/image-20200704134909849.png" alt="image-20200704134909849" width="200px" />
+<img src="./readme-images/image-20200704134941002.png" alt="image-20200704134941002" width="200px" />
 </p>
 
 > Note how it doesn't ask for "der Aufstand" --> we have to guess the gender!
-> <img src="./readme-images/image-20200704134941002.png" alt="image-20200704134941002" width="200px" />
 
 > **Front+** will be displayed on the back of the card unless the field is left empty, in which case, **Front** will be displayed instead.
 
@@ -119,14 +119,16 @@ Here, dealing with a noun,  **front+** reinforces both vocubulary recall as well
 </p>
 
 > Notice how no extra information is provided in this example. Below is an example featuring extra info.
+>
 > <img src="./readme-images/image-20200704135745517.png" alt="image-20200704135745517" width="200px" />
-> ![image-20200704135819106](./readme-images/image-20200704135819106.png)
+>
+> <img src="./readme-images/image-20200704135819106.png" alt="image-20200704135745517" width="200px" />
 
 
 Last but not least, the image field, cover-tip field, definition and word type fields:
 
 <p align="center">
-![image-20200704135904579](./readme-images/image-20200704135904579.png)
+<img src="./readme-images/image-20200704135904579.png" width="200px" />
 </p>
 
 >  Images can simply be copied and pasted into the field. 
@@ -134,7 +136,8 @@ Last but not least, the image field, cover-tip field, definition and word type f
 ⚠️ **Important**: Words entered in word type field must be entered in **bold**. In order to avoid unwanted grouping, it is important that the spaces between tags *not* be bold.  Bolded spaces will result in word grouping as seen below.
 
 > Writing the following:
-> ![image-20200704140121263](./readme-images/image-20200704140121263.png)
+> 
+> <img src="./readme-images/image-20200704140121263.png" width="200px" />
 >
 > with a bold space will yield:
 >
@@ -154,9 +157,11 @@ Last but not least, the image field, cover-tip field, definition and word type f
 ---
 
 And this is how it works! Again, everything can be previewed and toyed with [here](https://elemarmar.github.io/my-anki-collection/templates/german-vocab/index.html). To download the template, click on [Download](https://github.com/elemarmar/my-anki-collection/blob/master/files/german-vocab.apkg).
+
 <p align="center">
 <img src="./readme-images/image-20200704135608206.png" alt="image-20200704135608206" width="400px" />
 </p>
+
 Bear in mind I'm still working on improvements and cleaning up the code. If you have any suggestions, encounter any bugs or  would like me to design a card template for you, let me know! 🦊
 
 
