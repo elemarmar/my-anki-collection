@@ -125,11 +125,11 @@ O mírate la documentación oficial:
 
 He subido un par de vídeos de cómo crear una tarjeta y cómo se ven cuando las estudias en el ordenador y en el móvil. Los vídeos se pueden ver aquí:
 
-- [Cómo crear una tarjeta](./readme-videos/prueba-crear.mov)
+- [Cómo crear una tarjeta](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/readme-videos/prueba-crear.mov)
 
-- [Cómo se ve en el móvil](./readme-videos/prueba-móvil.mov)
+- [Cómo se ve en el móvil](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/readme-videos/prueba-móvil.mov)
 
-- [Cómo estudiar](./readme-videos/prueba-estudiar.mov)
+- [Cómo estudiar](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/readme-videos/prueba-estudiar.mov)
 
   
 
