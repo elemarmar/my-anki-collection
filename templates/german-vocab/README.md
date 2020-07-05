@@ -135,17 +135,17 @@ Last but not least, the image field, cover-tip field, definition and word type f
 
 ⚠️ **Important**: Words entered in word type field must be entered in **bold**. In order to avoid unwanted grouping, it is important that the spaces between tags *not* be bold.  Bolded spaces will result in word grouping as seen below.
 
-> Writing the following:
-> 
-> <img src="./readme-images/image-20200704140121263.png" width="200px" />
->
-> with a bold space will yield:
->
-> <img src="./readme-images/image-20200704140157374.png" alt="image-20200704140157374" width="200px" />
->
+Writing the following:
+
+<img src="./readme-images/image-20200704140121263.png" width="200px" />
+
+with a bold space will yield:
+
+<img src="./readme-images/image-20200704140157374.png" alt="image-20200704140157374" width="200px" />
+
 > To fix this, simply "unbold" the space between words:
->
-> <img src="./readme-images/image-20200704140226294.png" alt="image-20200704140226294" width="200px" />
+
+<img src="./readme-images/image-20200704140226294.png" alt="image-20200704140226294" width="200px" />
 
 > 👉🏻  Cool and konstenlose images can be found at [Unsplash](https://unsplash.com/) which will make your cards more pleasant to look at! 
 
@@ -159,7 +159,7 @@ Last but not least, the image field, cover-tip field, definition and word type f
 And this is how it works! Again, everything can be previewed and toyed with [here](https://elemarmar.github.io/my-anki-collection/templates/german-vocab/index.html). To download the template, click on [Download](https://github.com/elemarmar/my-anki-collection/blob/master/files/german-vocab.apkg).
 
 <p align="center">
-<img src="./readme-images/image-20200704135608206.png" alt="image-20200704135608206" width="400px" />
+<img src="./readme-images/image-20200704135608206.png" alt="image-20200704135608206" width="200px" />
 </p>
 
 Bear in mind I'm still working on improvements and cleaning up the code. If you have any suggestions, encounter any bugs or  would like me to design a card template for you, let me know! 🦊
