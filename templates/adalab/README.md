@@ -78,14 +78,14 @@ Actualmente la tarjeta acepta los siguientes iconos (aquí pongo las keywords ex
 
 ---
 
-### Importante
+### ⚠️ Importante
 
-Para ver la tarjeta bien hay que añadirle dos imágenes en la carpeta de media de Anki. Si te saltas este paso ni el logo ni la barra de la terminal se verán :(. Si quieres saber dónde está la carpeta puedes seguir estos pasos:
+Para ver la tarjeta bien hay que añadir dos imágenes en la carpeta de media de Anki. Si te saltas este paso ni el logo ni la barra de la terminal se verán :(. Si quieres saber dónde está la carpeta puedes seguir estos pasos:
 
 Las imágenes en cuestión son:
 
-- aa
-- bb
+- [Logo de Adalab](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/logo-adalab.png)
+- [Terminal bar](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/terminal-bar.png)
 
 **Si tienes un Mac**
 
