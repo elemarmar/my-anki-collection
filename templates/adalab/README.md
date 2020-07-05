@@ -1,6 +1,6 @@
 # Adalab template
 
-¡Hola! Este es un template de tarjetas Anki inspirado en el diseño de [Adalab](https://adalab.es/). El objetivo de este template es aprender los conceptos de programación que se nos enseñan en el curso de Adalab. Puedes ver una simulación de cómo se ve este template [aquí](./index.html). Para descargarlo pulsa aquí: [Descarga]()
+¡Hola! Este es un template de tarjetas Anki inspirado en el diseño de [Adalab](https://adalab.es/). El objetivo de este template es aprender los conceptos de programación que se nos enseñan en el curso de Adalab. Puedes ver una simulación de cómo se ve este template [aquí](https://elemarmar.github.io/my-anki-collection/templates/adalab/index.html). Para descargarlo pulsa aquí: [Descarga](https://github.com/elemarmar/my-anki-collection/blob/master/files/adalab-promo-j.apkg)
 
 <p align="center">
  <img src="./readme-images/image-20200704141402479.png" alt="image-20200704142230577" width="700px" />
