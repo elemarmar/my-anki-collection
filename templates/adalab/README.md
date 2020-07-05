@@ -2,7 +2,9 @@
 
 ¡Hola! Este es un template de tarjetas Anki inspirado en el diseño de [Adalab](https://adalab.es/). El objetivo de este template es aprender los conceptos de programación que se nos enseñan en el curso de Adalab. Puedes ver una simulación de cómo se ve este template [aquí](./index.html). Para descargarlo pulsa aquí: [Descarga]()
 
-![image-20200704141402479](./readme-images/image-20200704141402479.png)
+<p align="center">
+ <img src="./readme-images/image-20200704141402479.png" alt="image-20200704142230577" width="700px" />
+</p>
 
 ## ¿No conoces Anki?
 
@@ -22,7 +24,7 @@ Mi template cuenta con una sola tarjeta de dos caras. Una cara A que te hace una
 
 ### Cara A
 
-<img src="./readme-images/image-20200704142230577.png" alt="image-20200704142230577" style="zoom:50%;" />
+<img src="./readme-images/image-20200704142230577.png" alt="image-20200704142230577" width="700px" />
 
 En la cara A aparece el logo de Adalab, la pregunta en blanco y grande y debajo el número del Módulo al que pertenece el concepto que estamos añadiendo así como un icono que representa el lenguaje o tecnología que tiene que ver con la pregunta. 
 
@@ -30,7 +32,7 @@ En la cara A aparece el logo de Adalab, la pregunta en blanco y grande y debajo 
 
 ### Cara B
 
-<img src="./readme-images/image-20200704142429989.png" alt="image-20200704142429989" style="zoom:50%;" />
+<img src="./readme-images/image-20200704142429989.png" alt="image-20200704142429989" width="700px;" />
 
 La cara B incluye la pregunta arriba, y además nos muestra la solución. La parte de la solución puede incluir un texto don de se explique el concepto así como la imagen de una terminal donde pondríamos el código relacionado con el concepto.
 
@@ -46,15 +48,13 @@ El template cuenta con 4 campos a rellenar:
 4. la terminal
 5. el número de módulo
 
-<img src="./readme-images/image-20200704142633550.png" alt="image-20200704142633550" style="zoom:50%;" />
+<img src="./readme-images/image-20200704142633550.png" alt="image-20200704142633550" width="700px" />
 
 > En esta imagen podemos ver cómo es la interfaz de Anki cuando estamos rellenando los campos. 
 
 La imagen superior nos daría de resultado:
 
-<img src="./readme-images/image-20200704142729734.png" alt="image-20200704142729734" style="zoom:50%;" />
-
-
+<img src="./readme-images/image-20200704142729734.png" alt="image-20200704142729734" witdh="500px" />
 
 **Sobre los iconos**
 
@@ -93,17 +93,21 @@ Ve a esta dirección: `~/Library/Application Support/Anki2`
 
 Puedes acceder a través de finder pulsando en "ir a la carpeta..."
 
-<img src="./readme-images/image-20200704221240566.png" alt="image-20200704221240566" style="zoom: 67%;" />
+<img src="./readme-images/image-20200704221240566.png" alt="image-20200704221240566" width="500px" />
 
-![image-20200704221305966](./readme-images/image-20200704221305966.png)
+<img src="./readme-images/image-20200704221305966.png" alt="image-20200704142729734" witdh="700px" />
+
 
 Después te metes en "User 1" o "User" o cualquier nombre que hayas puesto al instalar Anki.
 
-![image-20200704221317581](./readme-images/image-20200704221317581.png)
+
+<img src="./readme-images/image-20200704221317581.png" alt="image-20200704142729734" witdh="700px" />
+
 
 Dentro hay una carpeta que se llama "collection.media" donde deberás pegar las dos imágenes de antes.
 
-![image-20200704221335539](./readme-images/image-20200704221335539.png)
+<img src="./readme-images/image-20200704221335539.png" alt="image-20200704142729734" witdh="700px" />
+
 
 
 
@@ -111,11 +115,11 @@ Dentro hay una carpeta que se llama "collection.media" donde deberás pegar las 
 
 Puedes echarle un ojo a este post: https://qastack.mx/superuser/963526/where-does-anki-store-media
 
-![image-20200704221956724](./readme-images/image-20200704221956724.png)
+<img src="./readme-images/image-20200704221956724.png" alt="image-20200704142729734" witdh="700px" />
 
 O mírate la documentación oficial:
 
-![image-20200704222040874](./readme-images/image-20200704222040874.png)
+<img src="./readme-images/image-20200704222040874.png" alt="image-20200704142729734" witdh="700px" />
 
 ## Échale un ojo a los vídeos
 
