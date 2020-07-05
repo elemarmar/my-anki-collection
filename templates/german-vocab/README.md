@@ -82,6 +82,9 @@ This template has 9 inputs:
 7. **cover-tip (hint)**
 8. **definition**
 9. **word type** (trennbar, untrennbar, ...)
+
+
+### Front & Front+
    
 <p align="center">
 <img src="./readme-images/image-20200704134748648.png" alt="image-20200704134748648" width="200px" />
@@ -108,11 +111,15 @@ Here, dealing with a noun,  **front+** reinforces both vocubulary recall as well
 
 > **Front+** will be displayed on the back of the card unless the field is left empty, in which case, **Front** will be displayed instead.
 
+### Examples 
+
 <p align="center">
 <img src="./readme-images/image-20200704135054454.png" alt="image-20200704135054454" width="400px" />
 </p>
 
 ⚠️ **Important**: To hide words in the German example sentence, simply enter the desired words in **bold**:
+
+### Extra information
 
 <p align="center">
 <img src="./readme-images/image-20200704135201048.png" alt="image-20200704135201048" width="200px" />
@@ -124,7 +131,7 @@ Here, dealing with a noun,  **front+** reinforces both vocubulary recall as well
 >
 > <img src="./readme-images/image-20200704135819106.png" alt="image-20200704135745517" width="400px" />
 
-
+### Image, cover-tip, definition & word type
 Last but not least, the image field, cover-tip field, definition and word type fields:
 
 <p align="center">
