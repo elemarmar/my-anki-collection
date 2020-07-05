@@ -135,4 +135,4 @@ He subido un par de vídeos de cómo crear una tarjeta y cómo se ven cuando las
 
 ---
 
-Si tienes algún problema con el template o alguna idea, ¡mándame un mensaje o ábreme un issue! ¡Al turrón, 🙇🏻‍♀️!
+Si tienes algún problema con el template o alguna idea, ¡mándame un mensaje o ábreme un issue! 🙇🏻‍♀️
