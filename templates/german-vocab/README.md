@@ -88,13 +88,13 @@ This template has 9 inputs:
 </p>
 
 <p align="center">
-<img src="./readme-images/image-20200704134648972.png" alt="image-20200704134648972" style="zoom:300px;" />
+<img src="./readme-images/image-20200704134648972.png" alt="image-20200704134648972" width="300px;" />
 </p>
 
 In this example only **front** is filled in, since this verb doesn't contain extra info. Below are two examples which demonstrate the difference between cards with and without **front+**:
 
 <p align="center">
-<img src="./readme-images/image-20200704134820522.png" alt="image-20200704134820522" style="zoom:300px;" />
+<img src="./readme-images/image-20200704134820522.png" alt="image-20200704134820522" width="300px;" />
 </p>
 
 Here, dealing with a noun,  **front+** reinforces both vocubulary recall as well as gender:
@@ -109,7 +109,7 @@ Here, dealing with a noun,  **front+** reinforces both vocubulary recall as well
 > **Front+** will be displayed on the back of the card unless the field is left empty, in which case, **Front** will be displayed instead.
 
 <p align="center">
-<img src="./readme-images/image-20200704135054454.png" alt="image-20200704135054454" width="200px" />
+<img src="./readme-images/image-20200704135054454.png" alt="image-20200704135054454" width="400px" />
 </p>
 
 ⚠️ **Important**: To hide words in the German example sentence, simply enter the desired words in **bold**:
@@ -122,7 +122,7 @@ Here, dealing with a noun,  **front+** reinforces both vocubulary recall as well
 >
 > <img src="./readme-images/image-20200704135745517.png" alt="image-20200704135745517" width="200px" />
 >
-> <img src="./readme-images/image-20200704135819106.png" alt="image-20200704135745517" width="200px" />
+> <img src="./readme-images/image-20200704135819106.png" alt="image-20200704135745517" width="400px" />
 
 
 Last but not least, the image field, cover-tip field, definition and word type fields:
@@ -143,7 +143,7 @@ with a bold space will yield:
 
 <img src="./readme-images/image-20200704140157374.png" alt="image-20200704140157374" width="200px" />
 
-> To fix this, simply "unbold" the space between words:
+To fix this, simply "unbold" the space between words:
 
 <img src="./readme-images/image-20200704140226294.png" alt="image-20200704140226294" width="200px" />
 
