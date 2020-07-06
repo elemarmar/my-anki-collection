@@ -127,7 +127,7 @@ He subido un par de vídeos de cómo crear una tarjeta y cómo se ven cuando las
 
 - [Cómo crear una tarjeta](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/readme-videos/prueba-crear.mov)
 
-- [Cómo se ve en el móvil](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/readme-videos/prueba-móvil.mov)
+- [Cómo se ve en el móvil](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/readme-videos/prueba-móvil.mp4)
 
 - [Cómo estudiar](https://github.com/elemarmar/my-anki-collection/blob/master/templates/adalab/readme-videos/prueba-estudiar.mov)
 
