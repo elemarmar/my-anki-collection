@@ -16,17 +16,26 @@ So far I have uploaded the following:
 
 ---
 
-## Next template: (German 🇩🇪) Learning stark Verben 
+## Next template: (German 🇩🇪) Learning starke Verben 
 
 Learn German verbs easily by using this template. They are divided by groups of verbs that are conjugated the same and it includes a short story with images to better remember all the verbs of a group.
 
-<img src="/Users/elemarmar/Documents/web development/Repositories/my-anki-collection/images/cover.png" alt="cover" style="zoom:24%;" />
+<p align="center">
+
+<img src="./images/cover.png" alt="cover" width="600px" />
 
 > Computer V.1
 
-<img src="/Users/elemarmar/Documents/web development/Repositories/my-anki-collection/images/cover-mobile.png" alt="cover-mobile" style="zoom:24%;" />
+</p>
+
+
+<p align="center">
+
+<img src="./images/cover-mobile.png" alt="cover-mobile" width="300px" />
 
 > Mobile V.1
+
+</p>
 
 ---
 
