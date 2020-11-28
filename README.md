@@ -16,6 +16,20 @@ So far I have uploaded the following:
 
 ---
 
+## Next template: (German 🇩🇪) Learning stark Verben 
+
+Learn German verbs easily by using this template. They are divided by groups of verbs that are conjugated the same and it includes a short story with images to better remember all the verbs of a group.
+
+<img src="/Users/elemarmar/Documents/web development/Repositories/my-anki-collection/images/cover.png" alt="cover" style="zoom:24%;" />
+
+> Computer V.1
+
+<img src="/Users/elemarmar/Documents/web development/Repositories/my-anki-collection/images/cover-mobile.png" alt="cover-mobile" style="zoom:24%;" />
+
+> Mobile V.1
+
+---
+
 ## How to install the templates
 
 Most templates can just be downloaded as an anki file `.apkg` and opened  with Anki. For cards containing pictures such as the Polish conjugation it may be necessary to download the pictures and place them in the Anki program's media folder, which might differ depending on your OS.
