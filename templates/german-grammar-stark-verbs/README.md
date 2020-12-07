@@ -36,9 +36,9 @@ This template for [Anki](https://apps.ankiweb.net/) allows you to study the [sta
 
 | Front                               | Back                              |
 | ----------------------------------- | --------------------------------- |
-| ![phone-front](phone-front.png)     | ![phone-back](phone-back.png)     |
-| ![tablet-front](tablet-front.png)   | ![tablet-back](tablet-back.png)   |
-| ![desktop-front](desktop-front.png) | ![desktop-back](desktop-back.png) |
+| ![phone-front](readme-images/phone-front.png)     | ![phone-back](readme-images/phone-back.png)     |
+| ![tablet-front](readme-images/tablet-front.png)   | ![tablet-back](readme-images/tablet-back.png)   |
+| ![desktop-front](readme-images/desktop-front.png) | ![desktop-back](readme-images/desktop-back.png) |
 
 <p align="center">
 
