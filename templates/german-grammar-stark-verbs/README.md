@@ -6,7 +6,7 @@ This template for [Anki](https://apps.ankiweb.net/) allows you to study the [sta
 
 
 <p align="center">
-  
+
 <img src="readme-images/cover-mobile.png" alt="cover-mobile" width="300px" />
 
 </p>
@@ -23,7 +23,7 @@ This template for [Anki](https://apps.ankiweb.net/) allows you to study the [sta
 - A story in German that includes the group verbs to better remember them all. It include pictures.
 
 <p align="center">
-  
+
   <img src="readme-images/anki-phone.gif" alt="cover-mobile"/>
 
 </p>
@@ -55,6 +55,8 @@ This template for [Anki](https://apps.ankiweb.net/) allows you to study the [sta
 ### Modifying the stories
 
 I kept the stories separated from the main html section of Anki so if you want to modify the story for a certain card or group of card you have to edit that card and specifically the html of the field `story` that is between `<style>` and `<script>` as you can see in the following gif:
+
+![edit-story](readme-images/edit-story.gif)
 
 
 The structure of a story is:
