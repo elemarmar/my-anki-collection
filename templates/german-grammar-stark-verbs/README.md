@@ -1,12 +1,15 @@
 # German starke Verben
 
-![cover](cover.png)
+![cover](readme-images/cover.png)
 
 This template for [Anki](https://apps.ankiweb.net/) allows you to study the [starke Verben](https://en.wikipedia.org/wiki/Germanic_strong_verb)  (strong verbs). All the verbs included in the package have been taken from this [source](https://www.deutschplus.net/pages/Tabelle_starker_Verben)  **although** verbs marked as *C2* have been excluded since they aren't used as often.
 
 
+<p align="center">
+  
+<img src="readme-images/cover-mobile.png" alt="cover-mobile" width="300px" />
 
-<img src="cover-mobile-7344002.png" alt="cover-mobile" width="300px" />
+</p>
 
 ---
 
@@ -19,7 +22,11 @@ This template for [Anki](https://apps.ankiweb.net/) allows you to study the [sta
 - A list of other verbs that belong to the same group and are conjugated likewise.
 - A story in German that includes the group verbs to better remember them all. It include pictures.
 
-![anki-phone](anki-phone.gif)
+<p align="center">
+  
+  <img src="readme-images/anki-phone.gif" alt="cover-mobile"/>
+
+</p>
 
 
 
@@ -33,8 +40,11 @@ This template for [Anki](https://apps.ankiweb.net/) allows you to study the [sta
 | ![tablet-front](tablet-front.png)   | ![tablet-back](tablet-back.png)   |
 | ![desktop-front](desktop-front.png) | ![desktop-back](desktop-back.png) |
 
-![screens](screens.gif)
+<p align="center">
 
+  <img src="readme-images/screens.gif" alt="cover-mobile"/>
+
+<p/>
 
 
 
@@ -45,7 +55,6 @@ This template for [Anki](https://apps.ankiweb.net/) allows you to study the [sta
 
 I kept the stories separated from the main html section of Anki so if you want to modify the story for a certain card or group of card you have to edit that card and specifically the html of the field `story` that is between `<style>` and `<script>` as you can see in the following gif:
 
-% GIF%
 
 The structure of a story is:
 
