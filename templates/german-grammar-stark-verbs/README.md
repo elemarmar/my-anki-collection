@@ -46,6 +46,7 @@ This template for [Anki](https://apps.ankiweb.net/) allows you to study the [sta
 
 <p/>
 
+> New version includes padding top-bottom in header in mobile version.
 
 
 
