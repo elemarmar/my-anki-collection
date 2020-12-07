@@ -17,7 +17,7 @@
       .container {
         font-family: 'Poppins', sans-serif;
         margin: auto;
-        width: 100%;
+        width: 99vw;
         height: 100vh;
         text-align: center;
         overflow: hidden;
@@ -25,6 +25,14 @@
         color: #eee;
         border: 4px solid rgb(32, 35, 42);
         z-index: 1;
+      }
+
+      .tags {
+        border-bottom: solid 2px rgb(233,233,233);
+        padding: 20px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 13px;
+        color: #333;
       }
 
       /* Reset some styles */
@@ -59,6 +67,7 @@
         box-shadow: 0 2px 2px rgb(56, 59, 66);
         position: relative;
         z-index: 222;
+        max-width: 100vw;
       }
 
       .header__remember {
@@ -90,7 +99,7 @@
         box-shadow: 0 2px 0 rgb(197, 179, 159);
       }
       .more-info::before {
-        content: url(lnr-chevron-down.svg);
+        content: url(images/lnr-chevron-down.svg);
         width: 42px;
         height: 20px;
         position: absolute;
@@ -104,9 +113,6 @@
         font-size: 14px;
         padding: 24px 20%;
       }
-
-
-
 
       .verb__title {
         font-size: 20px;
@@ -195,13 +201,13 @@
       }
 
       #present::before {
-        content: url(lnr-star.svg);
+        content: url(images/lnr-star.svg);
       }
       #past::before {
-        content: url(lnr-history.svg);
+        content: url(images/lnr-history.svg);
       }
       #participle::before {
-        content: url(lnr-rocket.svg);
+        content: url(images/lnr-rocket.svg);
         line-height: 46px;
       }
 
@@ -246,7 +252,7 @@
 
       .show-all {
         display: block;
-        background: url(lnr-pushpin.svg) no-repeat center;
+        background: url(images/lnr-pushpin.svg) no-repeat center;
         height: 20px;
         width: 20px;
         top: -12px;
@@ -296,6 +302,10 @@
       .hidden {
        display: none;
       }
+
+
+
+
 
       @media screen and (min-width: 800px) {
         .container {
@@ -370,67 +380,194 @@
       }
 
       .arrow-left {
-        content: url(lnr-chevron-left.svg);
+        content: url(images/lnr-chevron-left.svg);
         left: 20px;
       }
 
       .arrow-right {
-        content: url(lnr-chevron-right.svg);
+        content: url(images/lnr-chevron-right.svg);
         right: 20px;
       }
 
+
+      /* Media Queries */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .container {
+          border: solid 1px red;
+          width: 100vw;
+          padding: 11% 6%;
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: repeat(8, minmax(0, 1fr));
+          gap: 30px;
+          grid-template-rows: repeat(4, 1fr);
+          grid-template-areas:
+            "hd hd hd hd cj cj cj cj"
+            "hd hd hd hd cj cj cj cj"
+            "rv rv rv rv rv rv rv rv"
+            "rv rv rv rv rv rv rv rv"
+        }
+        .header {
+          width: 300px;
+          max-width: 300px;
+          align-self: center;
+          height: 250px;
+          justify-self: end;
+          grid-area: hd;
+                    display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 350px;
+        }
+
+
+        .more-info {
+          bottom: unset;
+          transform: translate(-50%, 31px);
+        }
+
+        .more-info:hover {
+          bottom: initial;
+        }
+
+        .show-all {
+          top: 14px;
+        }
+        .conjugation {
+          justify-self: start;
+          align-self: center;
+          margin-bottom: 50px;
+          margin: auto;
+          grid-area: cj;
+        }
+        .related {
+          width: 60%;
+          margin-left: 36px;
+          grid-area: rv;
+          justify-self: center;
+        }
+
+      }
+
+      
+      /* 1025px — 1200px: Desktops, large screens */
+        @media screen and (min-width: 1025px) {
+        .container {
+          padding: 11% 6%;
+          gap: 10px;
+        }
+        .header {
+          width: 360px;
+          max-width: 360px;
+          align-self: center;
+          height: 350px;
+          justify-self: end;
+        }
+        .conjugation {
+          justify-self: start;
+          align-self: end;
+          margin-bottom: 50px;
+          margin: 0 auto;
+        }
+        .related {
+          justify-self: start;
+          width: 60%;
+          margin-left: 36px;
+          padding-top: 30px;
+        }
+        .header__remember {
+          min-width: 400px;
+          max-width: 400px;
+        }
+
+                .show-all {
+          top: 40px;
+        }
+      }
+
+      /* 1201px and more —  Extra large screens, TV */
+      @media screen and (min-width: 1201px) {
+        .header {
+          width: 450px;
+        }
+      }
     </style>
   </head>
   <body>
-<div class="container">
-      <div class="header">
-        <div class="header__remember">
-          <div class="story">
-            <div class="story__item">
-              <img class="story__emoji" src="baker.png" />
-              <p class="story__text">Der Bäcker hat einen spezialen Kuchen gebacken (<b>backen</b>).</p>
-            </div>
-            <div class="story__item">
-              <img class="story__emoji" src="cake.png" />
-              <p class="story__text">Er hat ein Meisterwerk geschaffen (<b>schaffen</b>).</p>
-            </div>
-            <div class="story__item">
-              <img class="story__emoji" src="truck.png" />
-              <p class="story__text">Er lädt (<b>laden</b>) es ins Auto und fährt (<b>fahren</b>).</p>
-            </div>
+    <header>
+      <p class="tags">This view is an approximation of what it looks like in Anki</p>
+    </header>
 
-              <span class="arrow-left" onclick="plusSlides(-1)"></span>
-              <span class="arrow-right" onclick="plusSlides(1)"></span>
-
+    <main>
+      <div class="container">
+        <div class="header">
+          <div class="header__remember">
+            <div class="story">
+              <div class="story__item" style="display: block;">
+                <img class="story__emoji" src="images/baker.png">
+                <p class="story__text">Der Bäcker hat einen speziellen Kuchen gebacken (<b>backen</b>).</p>
+              </div>
+              <div class="story__item" style="display: none;">
+                <img class="story__emoji" src="images/cake.png">
+                <p class="story__text">Er hat ein Meisterwerk geschaffen (<b>schaffen</b>).</p>
+              </div>
+              <div class="story__item" style="display: none;">
+                <img class="story__emoji" src="images/truck.png">
+                <p class="story__text">Er lädt (<b>laden</b>) es ins Auto und fährt (<b>fahren</b>) ab.</p>
+              </div>
+              <div class="story__item" style="display: none;">
+                <img class="story__emoji" src="images/king.png">
+                <p class="story__text">Aber es stand eine Person auf der Straße die Klamotten eines Königs trägt (<b>tragen), </b></p>
+              </div>
+              <div class="story__item" style="display: none;">
+                <img class="story__emoji" src="images/truck.png">
+                <img class="story__emoji" src="images/hit.png">
+                <p class="story__text">...und der Bäcker slägt(<b>schlagen</b>) ihn.</p>
+              </div>
+              <div class="story__item" style="display: none;">
+                <img class="story__emoji" src="images/rip.png">
+                <p class="story__text">Dann muss er den König begraben (<b>graben), </b></p>
+              </div>
+              <div class="story__item" style="display: none;">
+                <img class="story__emoji" src="images/blood.png">
+                <img class="story__emoji" src="images/soap.png">
+                <p class="story__text">...und seine blutigen Hände <b>waschen</b>.</p>
+              </div>
+              <div class="story__item" style="display: none;">
+                <img class="story__emoji" src="images/old.png">
+                <p class="story__text">Der Bäcker wächst (<b>wachsen</b>), aber nach vielen Jahren ist er immer noch traumatisiert.</p>
+              </div>
+                <span class="arrow-left" onclick="plusSlides(-1)"></span>
+                <span class="arrow-right" onclick="plusSlides(1)"></span>
+              </div>
           </div>
+          <h1 class="verb__title">Tragen</h1>
+          <span class="more-info"></span>
         </div>
-        <h1 class="verb__title">{{verb}}</h1>
-        <span class="more-info"></span>
-      </div>
-      <ul class="conjugation">
-        <li class="conjugation__item" id="present">
-          <span class="conjugation__verb">{{present}}</span>
-          <span class="conjugation__title">Present</span>
-        </li>
-        <li class="conjugation__item" id="past"">
-          <span class="conjugation__verb">{{past}}</span>
-          <span class="conjugation__title">Past</span>
-        </li>
-        <li class="conjugation__item" id="participle" ">
-          <span class="conjugation__verb">{{past participle}}</span>
-          <span class="conjugation__title">Participle</span>
-        </li>
-      </ul>
-      <div class="related">
-        <h2 class="related__title">{{group name}}</h2>
-        <span class="show-all"></span>
-        <ul class="related__container">
+        <ul class="conjugation">
+          <li class="conjugation__item" id="present">
+            <span class="conjugation__verb">trägt</span>
+            <span class="conjugation__title">Present</span>
+          </li>
+          <li class="conjugation__item" id="past"">
+            <span class="conjugation__verb">trug</span>
+            <span class="conjugation__title">Past</span>
+          </li>
+          <li class="conjugation__item" id="participle" ">
+            <span class="conjugation__verb">getragen</span>
+            <span class="conjugation__title">Participle</span>
+          </li>
         </ul>
+        <div class="related">
+          <h2 class="related__title">Group: a ▸ u</h2>
+          <span class="show-all"></span>
+          <ul class="related__container">
+          </ul>
+        </div>
       </div>
-    </div>
-<div id="js-related" class="hidden">{{related verbs}}</div>
-      </div>
-      </div>
+      <div id="js-related" class="hidden">backen schaffen laden fahren tragen schlagen graben waschen wachsen</div>
+    </main>
     <script>
       const past = document.getElementById('past');
       const participle = document.getElementById('participle');
